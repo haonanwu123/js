@@ -109,7 +109,6 @@ while (number < 10) {
     console.log(number);
     number++;
 }
-/*/
 
 let number = 10;
 while (number >= 5) {
@@ -120,3 +119,54 @@ while (number >= 5) {
 for (let y = 1; y < 10; y++) {
     console.log(y);
 }
+/*/
+
+function buitentemperatuur(tem) {
+    if (tem < 10) {
+        document.body.innerHTML += 'het is onder dan 10.<br>'
+    }else if (tem < 16) {
+        document.body.innerHTML += 'dat het niet warm is, en dat deze beter een jas aan kan doen.<br>'
+    } else if (tem <24) {
+        document.body.innerHTML += 'dat het niet koud en niet heel warm is.<br>'
+    }else if (tem >= 24) {
+        document.body.innerHTML += 'dat de gebruiker geen jas aan hoef vandaag.<br>'
+    }else if (tem > 30) {
+        document.body.innerHTML += 'dat de gebruiker vandaag maar beter goed kan insmeren.<br>'
+    }
+
+    return false;
+}
+
+buitentemperatuur(20);
+buitentemperatuur(30);
+buitentemperatuur(-2);
+
+
+function parameter(cijfer) {
+    if (cijfer >=1 && cijfer < 5.5) {
+        document.body.innerHTML += 'Je heb onvoldoende gehaald.<br>'
+    }else if (cijfer >= 5.5 && cijfer <= 10) {
+        document.body.innerHTML += 'Je heb voldoende gehaald.<br>'
+    }
+
+    return false;
+}
+
+parameter(3);
+parameter(6);
+parameter(100);
+
+function getal(gt) {
+    if (gt % 2 == 0) {
+        document.body.innerHTML += 'dit is even getal.<br>'
+    }else if (gt % 2 == 1) {
+        document.body.innerHTML += 'dit is oneven getal.<br>'
+    }
+
+    return false;
+}
+
+getal(1);
+getal(2);
+getal(101);
+getal(100);
