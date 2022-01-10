@@ -157,10 +157,10 @@ parameter(6);
 parameter(100);
 
 function getal(gt) {
-    if (gt % 2 == 0) {
-        document.body.innerHTML += 'dit is even getal.<br>'
-    }else if (gt % 2 == 1) {
-        document.body.innerHTML += 'dit is oneven getal.<br>'
+    if (gt % 2 === 0) {
+        console.log(true);
+    }else if (gt % 2 === 1) {
+        console.log(false);
     }
 
     return false;
