@@ -109,6 +109,7 @@ while (number < 10) {
     console.log(number);
     number++;
 }
+/*/
 
 let number = 10;
 while (number >= 5) {
@@ -119,4 +120,3 @@ while (number >= 5) {
 for (let y = 1; y < 10; y++) {
     console.log(y);
 }
-/*/
