@@ -119,8 +119,10 @@ while (number >= 5) {
 for (let y = 1; y < 10; y++) {
     console.log(y);
 }
-/*/
 
+//------------------------------------------------------2.7---------------------------------------//
+
+//--------opdracht1---------//
 function buitentemperatuur(tem) {
     if (tem < 10) {
         document.body.innerHTML += 'het is onder dan 10.<br>'
@@ -133,8 +135,6 @@ function buitentemperatuur(tem) {
     }else if (tem > 30) {
         document.body.innerHTML += 'dat de gebruiker vandaag maar beter goed kan insmeren.<br>'
     }
-
-    return false;
 }
 
 buitentemperatuur(20);
@@ -142,31 +142,35 @@ buitentemperatuur(30);
 buitentemperatuur(-2);
 
 
+
+//--------------------opdracht2------------//
 function parameter(cijfer) {
     if (cijfer >=1 && cijfer < 5.5) {
         document.body.innerHTML += 'Je heb onvoldoende gehaald.<br>'
     }else if (cijfer >= 5.5 && cijfer <= 10) {
         document.body.innerHTML += 'Je heb voldoende gehaald.<br>'
     }
-
-    return false;
 }
 
 parameter(3);
 parameter(6);
 parameter(100);
 
-function getal(gt) {
-    if (gt % 2 === 0) {
-        console.log(true);
-    }else if (gt % 2 === 1) {
-        console.log(false);
-    }
 
-    return false;
+
+//-----------opdrqacht3----------//
+let isEven;
+function even(userNumber) {
+    let answer = (userNumber % 2);
+    if (answer === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-getal(1);
-getal(2);
-getal(101);
-getal(100);
+isEven = even(8);
+isEven = even(9);
+isEven = even(1);
+isEven = even(12);
+/*/
