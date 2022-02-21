@@ -174,3 +174,37 @@ isEven = even(9);
 isEven = even(1);
 isEven = even(12);
 /*/
+
+
+//---------------2.10array---------//
+
+const playNaam = ["john","jony","jone"];
+console.log(playNaam[1]);
+console.log(playNaam[0]);
+console.log(playNaam[2]);
+console.log(playNaam.length);
+console.log(playNaam[playNaam.length -3]);
+
+const tramRooster = ["den haag", 2, "15:30"];
+console.log(tramRooster[1]);
+
+const medewerker = ["haonan","ali","bendy","xi"];
+for(let i = 0; i < medewerker.length; i++) {
+    const mederwerkerNaam = medewerker[i];
+    console.log(mederwerkerNaam);
+}
+
+const myArray = ["1","2",3,"4","5"];
+myArray.pop("getal");
+console.log(myArray);
+
+myArray.push("nummer");
+console.log(myArray);
+
+myArray.pop();
+console.log(myArray.pop());
+
+console.log(myArray.includes(3));
+console.log(myArray.includes("3"));
+
+console.log(myArray.length);
