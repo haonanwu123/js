@@ -4,7 +4,6 @@ aantalmensen = 10;
 aantalmensen = aantalmensen + 5;
 console.log(aantalmensen);
 
-
 const result = prompt('How old are you?', '18');
 alert(`You are ${result}`);
 const myAge = confirm('Are you aldut?');
@@ -170,7 +169,20 @@ function even(userNumber) {
 }
 
 isEven = even(8);
+console.log(isEven);
+
 isEven = even(9);
+console.log(isEven);
+
 isEven = even(1);
+console.log(isEven);
+
 isEven = even(12);
+console.log(isEven);
 /*/
+
+const myName = 'Haonan Wu'
+console.log(myName);
+console.log(myName.toUpperCase());
+document.body.innerHTML += myName;
+document.body.innerHTML += myName.toUpperCase();
