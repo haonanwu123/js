@@ -180,14 +180,12 @@ console.log(isEven);
 isEven = even(12);
 <<<<<<< HEAD
 console.log(isEven);
-/*/
 
 const myName = 'Haonan Wu'
 console.log(myName);
 console.log(myName.toUpperCase());
 document.body.innerHTML += myName;
 document.body.innerHTML += myName.toUpperCase();
-=======
 /*/
 
 
@@ -223,4 +221,3 @@ console.log(myArray.includes(3));
 console.log(myArray.includes("3"));
 
 console.log(myArray.length);
->>>>>>> 85a41ee45687ad1d3eea1b3afe64edea6ecb645f
