@@ -186,7 +186,6 @@ console.log(myName);
 console.log(myName.toUpperCase());
 document.body.innerHTML += myName;
 document.body.innerHTML += myName.toUpperCase();
-/*/
 
 
 //---------------2.10array---------//
@@ -221,3 +220,21 @@ console.log(myArray.includes(3));
 console.log(myArray.includes("3"));
 
 console.log(myArray.length);
+/*/
+
+console.log("Haonan");
+function buttonFunction(){
+    alert("Je heeft op de link geclickt.")
+}
+
+const lijstItems = document.querySelectorAll(".lijst-item");
+
+console.log(lijstItems);
+
+for(let i = 0; i < 5; i++ ){
+    console.log(lijstItems[i]);
+    const lijstItem = lijstItems[i];
+    if(lijstItem){
+        lijstItem.addEventListener("click", buttonFunction);
+    }
+}
