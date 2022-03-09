@@ -222,19 +222,37 @@ console.log(myArray.includes("3"));
 console.log(myArray.length);
 /*/
 
-console.log("Haonan");
-function buttonFunction(){
-    alert("Je heeft op de link geclickt.")
-}
+// console.log("Haonan");
+// function buttonFunction(){
+//     alert("Je heeft op de link geclickt.")
+// }
 
-const lijstItems = document.querySelectorAll(".lijst-item");
+// const lijstItems = document.querySelectorAll(".lijst-item");
 
-console.log(lijstItems);
+// console.log(lijstItems);
 
-for(let i = 0; i < 5; i++ ){
-    console.log(lijstItems[i]);
-    const lijstItem = lijstItems[i];
-    if(lijstItem){
-        lijstItem.addEventListener("click", buttonFunction);
+// for(let i = 0; i < 5; i++ ){
+//     console.log(lijstItems[i]);
+//     const lijstItem = lijstItems[i];
+//     if(lijstItem){
+//         lijstItem.addEventListener("click", buttonFunction);
+//     }
+// }
+
+console.log("haonan");
+
+const myNameInput = document.querySelector(".input");
+const btn = document.querySelector(".btn");
+const myNameOutput = document.querySelector(".output");
+
+btn.addEventListener("click", showName);
+myNameInput.addEventListener("keypress", (event) =>{
+    if(event.key === "Enter"){
+        showName();
     }
+});
+
+function showName() {
+    const myName = myNameInput.value;
+    myNameOutput.innerHTML = myName;
 }
